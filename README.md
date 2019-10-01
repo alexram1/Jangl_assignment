@@ -26,6 +26,13 @@ only one field in query string, which is less dynamic than using URLSearchParams
    The links should be formatted as:
 
     Ex: <a href="tel:1-555-222-3333">
+    
+ --In this case there's only one link with the class "tracked_number_link", which leaves a link with the old href.
+ I don't know if this is intended, but an easy solution would be to add the class name to the other link.
+ 
+    ex: <a href="tel:1 (888) 552-6548" class="tracked_number_link">
+            1 (888) 552-6548
+        </a>
 
 
 4. Make sure that your code is inside a javascript closure and does not pollute the
