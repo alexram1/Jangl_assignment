@@ -7,6 +7,10 @@ plain Javascript. (No JS Frameworks, jQuery, etc.)
 1. Read the URL query string and parse a US phone number from the field "number".
 
     Ex: https://some.url/?number=15552223333
+    
+-- I found a simple way to parse the query string using the field number, but I decided
+not to use it because it used a JS Framework. The way I have it now assumes that there is
+only one field in query string, which is less dynamic than using URLSearchParams.
 
 
 2. Replace all span instances with the class "tracked_number". The entire contents
